@@ -23,72 +23,72 @@ class Messages:
 
     HELP_MSG = [
         ".",
-        "**Google Drive Uploader**\n__I can upload files from direct link or Telegram Files to your Google Drive. All i need is to authenticate me to your Google Drive Account and send a direct download link or Telegram File.__\n\nI have more features... ! Wanna know about it ? Just walkthrough this tutorial and read the messages carefully.",
+        "**Google Drive Uploader**\n__Você pode fazer upload de arquivos através do link direto ou arquivos do telegram para o seu Google Drive. Só é necessário me autenticar em sua conta do Google Drive e enviar um link de download direto ou arquivo de telegram.__\n\nTenho mais recursos ...! Quer saber mais sobre isso? Basta percorrer este tutorial e ler as mensagens com atenção.",
         
-        f"**Authenticating Google Drive**\n__Send the /{BotCommands.Authorize[0]} commmand and you will receive a URL, visit URL and follow the steps and send the received code here. Use /{BotCommands.Revoke[0]} to revoke your currently logged Google Drive Account.__\n\n**Note: I will not listen to any command or message (except /{BotCommands.Authorize[0]} command) until you authorize me.\nSo, Authorization is mandatory !**",
+        f"**Autenticação com Google Drive**\n__Envie o comando /{BotCommands.Authorize[0]} e você receberá uma URL, visite a URL e siga os passos e envie o código recebido aqui. Usar /{BotCommands.Revoke[0]} para revogar sua conta do Google Drive atualmente registrada.__\n\n**Nota: Eu não vou ouvir nenhum comando ou mensagem (exceto /{BotCommands.Authorize[0]} commmand) até você me autorizar.\nPortanto, a autorização é obrigatória !**",
         
-        f"**Direct Links**\n__Send me a direct download link for a file and i will download it on my server and Upload it to your Google Drive Account. You can rename files before uploading to GDrive Account. Just send me the URL and new filename separated by ' | '.__\n\n**__Examples:__**\n```https://example.com/AFileWithDirectDownloadLink.mkv | New FileName.mkv```\n\n**Telegram Files**\n__To Upload telegram files in your Google drive Account just send me the file and i will download and upload it to your Google Drive Account. Note: Telegram Files Downloading are slow. it may take longer for big files.__\n\n**YouTube-DL Support**\n__Download files via youtube-dl.\nUse /{BotCommands.Ytdl[0]} (YouTube Link/YouTube-DL Supported site link)__",
+        f"**Direct Links**\n__Envie-me um link de download direto de um arquivo e farei o download em meu servidor e carregarei para sua conta do Google Drive. Você pode renomear arquivos antes de carregá-los na conta GDrive. Basta me enviar o URL e o novo nome de arquivo separados por ' | '.__\n\n**__Exemplos:__**\n```https://example.com/AFileWithDirectDownloadLink.mkv | New FileName.mkv```\n\n**Telegram Files**\n__Para fazer upload de arquivos do telegram em sua conta do Google Drive, basta me enviar o arquivo e eu irei fazer o download e enviar para sua conta do Google Drive. Nota: O download dos arquivos do Telegram é lento. pode demorar mais para arquivos grandes.__\n\n**YouTube-DL Support**\n__Download de pastas via youtube-dl.\nUse /{BotCommands.Ytdl[0]} (YouTube Link/YouTube-DL Supported site link)__",
         
-        f"**Custom Folder for Upload**\n__Want to upload in custom folder or in__ **TeamDrive** __ ?\nUse /{BotCommands.SetFolder[0]} (Folder URL) to set custom upload folder.\nAll the files are uploaded in the custom folder you provide.__",
+        f"**Pasta personalizada para upload**\n__Deseja fazer upload em uma pasta personalizada ou no__ ** TeamDrive** __ ?\nUse /{BotCommands.SetFolder[0]} (URL DA PASTA) para definir a pasta de upload personalizada.\nTodos os arquivos são carregados na pasta personalizada que você fornece.__",
         
-        f"**Delete Google Drive Files**\n__Delete google drive files. Use /{BotCommands.Delete[0]} (File/Folder URL) to delete file.\nYou can also empty trash files use /{BotCommands.EmptyTrash[0]}\nNote: Files are deleted permanently. This process cannot be undone.\n\n**Copy Google Drive Files**\n__Yes, Clone or Copy Google Drive Files.\n__Use /{BotCommands.Clone[0]} (File id / Folder id or URL) to copy Google Drive Files in your Google Drive Account.__",
+        f"**Apagar Pastas Google Drive**\n__Exclua os arquivos do Google Drive. Usar /{BotCommands.Delete[0]} (File/Folder URL) para excluir o arquivo.\nVocê também pode esvaziar arquivos de lixo usando /{BotCommands.EmptyTrash[0]}\nNota: os arquivos são excluídos permanentemente. Este processo não pode ser desfeito.\n\n**Copiar Pastas do Google Drive**\n__Sim, clone ou copie arquivos do Google Drive.\n__Use /{BotCommands.Clone[0]} (File id / Folder id or URL) para copiar arquivos do Google Drive em sua conta do Google Drive.__",
         
-        "**Rules & Precautions**\n__1. Don't copy BIG Google Drive Files/Folders. It may hang the bot and your files maybe damaged.\n2. Send One request at a time unless bot will stop all processes.\n3. Don't send slow links @transload it first.\n4. Don't misuse, overload or abuse this free service.__",
+        "**Regras e Precauções**\n__1. Não copie arquivos / pastas do Google Drive GRANDES. Ele pode travar o bot e seus arquivos podem ser danificados.\n2. Envie uma solicitação por vez, a menos que o bot interrompa todos os processos.\n3. Não envie links lentos @transload primeiro.\n4. Não abuse, sobrecarregue ou abuse deste serviço gratuito.__",
         
         # Dont remove this ↓ if you respect developer.
         "**Developed by @viperadnan**"
         ]
      
-    RATE_LIMIT_EXCEEDED_MESSAGE = "❗ **Rate Limit Exceeded.**\n__User rate limit exceeded try after 24 hours.__"
+    RATE_LIMIT_EXCEEDED_MESSAGE = "❗ **Limite de taxa excedido.**\n__Limite de taxa de usuário excedido, tente após 24 horas.__"
     
-    FILE_NOT_FOUND_MESSAGE = "❗ **File/Folder not found.**\n__File id - {} Not found. Make sure it\'s exists and accessible by the logged account.__"
+    FILE_NOT_FOUND_MESSAGE = "❗ **Arquivo/Pasta não encontrado.**\n__File id - {} Não encontrado. Certifique-se\'s existe e acessível pela conta registrada.__"
     
-    INVALID_GDRIVE_URL = "❗ **Invalid Google Drive URL**\nMake sure the Google Drive URL is in valid format."
+    INVALID_GDRIVE_URL = "❗ **URL inválida do Google Drive**\nCertifique-se de que o URL do Google Drive esteja em um formato válido."
     
-    COPIED_SUCCESSFULLY = "✅ **Copied successfully.**\n[{}]({}) __({})__"
+    COPIED_SUCCESSFULLY = "✅ **Copiado com sucesso.**\n[{}]({}) __({})__"
     
-    NOT_AUTH = f"🔑 **You have not authenticated me to upload to any account.**\n__Send /{BotCommands.Authorize[0]} to authenticate.__"
+    NOT_AUTH = f"🔑 **Você não me autenticou para enviar para qualquer conta.**\n__Send /{BotCommands.Authorize[0]} para autenticar.__"
     
-    DOWNLOADED_SUCCESSFULLY = "📤 **Uploading File...**\n**Filename:** ```{}```\n**Size:** ```{}```"
+    DOWNLOADED_SUCCESSFULLY = "📤 **Carregando arquivo...**\n**Filename:** ```{}```\n**Size:** ```{}```"
     
-    UPLOADED_SUCCESSFULLY = "✅ **Uploaded Successfully.**\n[{}]({}) __({})__"
+    UPLOADED_SUCCESSFULLY = "✅ **Carregado com sucesso.**\n[{}]({}) __({})__"
     
-    DOWNLOAD_ERROR = "❗**Downloader Failed**\n{}\n__Link - {}__"
+    DOWNLOAD_ERROR = "❗**O downloader falhou**\n{}\n__Link - {}__"
     
-    DOWNLOADING = "📥 **Downloading File...\nLink:** ```{}```"
+    DOWNLOADING = "📥 **Baixando arquivo...\nLink:** ```{}```"
     
-    ALREADY_AUTH = "🔒 **Already authorized your Google Drive Account.**\n__Use /revoke to revoke the current account.__\n__Send me a direct link or File to Upload on Google Drive__"
+    ALREADY_AUTH = "🔒 **Já autorizou sua conta do Google Drive.**\n__Use /revoke para revogar a conta corrente.__\n__Envie-me um link direto ou arquivo para fazer upload no Google Drive__"
     
-    FLOW_IS_NONE = f"❗ **Invalid Code**\n__Run {BotCommands.Authorize[0]} first.__"
+    FLOW_IS_NONE = f"❗ **Código inválido**\n__Run {BotCommands.Authorize[0]} first.__"
     
-    AUTH_SUCCESSFULLY = '🔐 **Authorized Google Drive account Successfully.**'
+    AUTH_SUCCESSFULLY = '🔐 **Conta autorizada do Google Drive com sucesso.**'
     
-    INVALID_AUTH_CODE = '❗ **Invalid Code**\n__The code you have sent is invalid or already used before. Generate new one by the Authorization URL__'
+    INVALID_AUTH_CODE = '❗ **Código inválido**\n__O código que você enviou é inválido ou já foi usado antes. Gere um novo pelo URL de autorização__'
     
-    AUTH_TEXT = "⛓️ **To Authorize your Google Drive account visit this [URL]({}) and send the generated code here.**\n__Visit the URL > Allow permissions > you will get a code > copy it > Send it here__"
+    AUTH_TEXT = "⛓️ **Para autorizar sua conta do Google Drive, visite este [URL]({}) e envie o código gerado aqui.**\n__Visite o URL > Permitir permissões > você receberá um código > copie > copie agora__"
     
     DOWNLOAD_TG_FILE = "📥 **Downloading File...**\n**Filename:** ```{}```\n**Size:** ```{}```\n**MimeType:** ```{}```"
     
-    PARENT_SET_SUCCESS = '🆔✅ **Custom Folder link set successfully.**\n__Your custom folder id - {}\nUse__ ```/{} clear``` __to clear it.__'
+    PARENT_SET_SUCCESS = '🆔✅ **Link de pasta personalizada definido com sucesso.**\n__Your custom folder id - {}\nUse__ ```/{} clear``` __to clear it.__'
     
-    PARENT_CLEAR_SUCCESS = f'🆔🚮 **Custom Folder ID Cleared Successfuly.**\n__Use__ ```/{BotCommands.SetFolder[0]} (Folder Link)``` __to set it back__.'
+    PARENT_CLEAR_SUCCESS = f'🆔🚮 **ID de pasta personalizada apagada com sucesso.**\n__Use__ ```/{BotCommands.SetFolder[0]} (Folder Link)``` __para colocá-lo de volta__.'
     
-    CURRENT_PARENT = "🆔 **Your Current Custom Folder ID - {}**\n__Use__ ```/{} (Folder link)``` __to change it.__"
+    CURRENT_PARENT = "🆔 **Seu ID de pasta personalizada atual - {}**\n__Use__ ```/{} (Folder link)``` __mudar isso.__"
     
-    REVOKED = f"🔓 **Revoked current logged account successfully.**\n__Use /{BotCommands.Authorize[0]} to authenticate again and use this bot.__"
+    REVOKED = f"🔓 **Conta atual registrada revogada com sucesso.**\n__Use /{BotCommands.Authorize[0]} para autenticar novamente e usar este bot.__"
     
-    NOT_FOLDER_LINK = "❗ **Invalid folder link.**\n__The link you send its not belong to a folder.__"
+    NOT_FOLDER_LINK = "❗ **Link de pasta inválido.**\n__O link que você enviou não pertence a uma pasta.__"
     
-    CLONING = "🗂️ **Cloning into Google Drive...**\n__G-Drive Link - {}__"
+    CLONING = "🗂️ **Clonagem no Google Drive...**\n__G-Drive Link - {}__"
     
-    PROVIDE_GDRIVE_URL = "**❗ Provide a valid Google Drive URL along with commmand.**\n__Usage - /{} (GDrive Link)__"
+    PROVIDE_GDRIVE_URL = "**❗ Forneça um URL válido do Google Drive junto com o comando.**\n__Usage - /{} (GDrive Link)__"
     
-    INSUFFICIENT_PERMISSONS = "❗ **You have insufficient permissions for this file.**\n__File id - {}__"
+    INSUFFICIENT_PERMISSONS = "❗ **Você não tem permissões suficientes para este arquivo.**\n__File id - {}__"
     
-    DELETED_SUCCESSFULLY = "🗑️✅ **File Deleted Successfully.**\n__File deleted permanently !\nFile id - {}__"
+    DELETED_SUCCESSFULLY = "🗑️✅ **Arquivo excluído com sucesso.**\n__Arquivo excluído permanentemente !\nFile id - {}__"
     
-    WENT_WRONG = "⁉️ **ERROR: SOMETHING WENT WRONG**\n__Please try again later.__"
+    WENT_WRONG = "⁉️ **ERRO: ALGO FOI ERRADO**\n__Por favor, tente novamente mais tarde.__"
     
-    EMPTY_TRASH = "🗑️🚮**Trash Emptied Successfully !**"
+    EMPTY_TRASH = "🗑️🚮**Lixeira esvaziada com sucesso !**"
     
-    PROVIDE_YTDL_LINK = "❗**Provide a valid YouTube-DL supported link.**"
+    PROVIDE_YTDL_LINK = "❗**Forneça um link válido do YouTube-DL compatível.**"
